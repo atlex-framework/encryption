@@ -1,0 +1,66 @@
+{
+  "name": "@atlex/encryption",
+  "version": "0.1.0-beta",
+  "description": "AES-256-GCM encryption utilities for Atlex",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Karen Hamazaspyan",
+    "url": "https://github.com/khamazaspyan"
+  },
+  "keywords": [
+    "atlex",
+    "encryption",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlex-framework/atlex-monorepo.git",
+    "directory": "packages/encryption"
+  },
+  "homepage": "https://atlex.dev",
+  "bugs": {
+    "url": "https://github.com/atlex-framework/atlex-monorepo/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run -c vitest.config.ts",
+    "prepublishOnly": "pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "@atlex/config": "workspace:*",
+    "@atlex/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@atlex/config": "workspace:*",
+    "@atlex/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
+  }
+}
