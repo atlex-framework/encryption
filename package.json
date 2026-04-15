@@ -1,6 +1,6 @@
 {
   "name": "@atlex/encryption",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "AES-256-GCM encryption utilities for Atlex",
   "type": "module",
   "license": "MIT",
