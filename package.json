@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atlex-framework/atlex-monorepo.git",
+    "url": "git+https://github.com/atlex-framework/encryption.git",
     "directory": "packages/encryption"
   },
   "homepage": "https://atlex.dev",
   "bugs": {
-    "url": "https://github.com/atlex-framework/atlex-monorepo/issues"
+    "url": "https://github.com/atlex-framework/encryption/issues"
   },
   "publishConfig": {
     "access": "public"
