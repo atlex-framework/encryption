@@ -1,6 +1,6 @@
 {
   "name": "@atlex/encryption",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "AES-256-GCM encryption utilities for Atlex",
   "type": "module",
   "license": "MIT",
@@ -68,8 +68,8 @@
     "@atlex/core": "workspace:*"
   },
   "peerDependencies": {
-    "@atlex/config": "workspace:>=0.2.1",
-    "@atlex/core": "workspace:>=0.2.1"
+    "@atlex/config": "workspace:>=0.2.2",
+    "@atlex/core": "workspace:>=0.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
